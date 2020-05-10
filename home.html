@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/home4.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+
+    <title>Bias Detection Dashboard</title>
+    <div class="w3-container w3-light-blue">
+      <h1 style="font-size:7vw;"><font color="white" weight="bold">BYEas</font></h1>
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+  <div class="w3-bar w3-blue-grey">
+    <a href="home.html" class="w3-bar-item w3-button">Score Summary</a>
+    <a href="explanation.html" class="w3-bar-item w3-button">What is the deal with these scores?</a>
+    <a href="about-us.html" class="w3-bar-item w3-button">About Our Team</a>
+    <a href="writing-assignments.html" class="w3-bar-item w3-button">Writing Assignments</a>
+    <a href="demo.html" class="w3-bar-item w3-button">Demo</a>
+  </div>
+</body>
+<body>
+  <div class="w3-container w3-flat-carrot">
+    <h2>Bias Scores</h2>
+
+  </div>
+  </br>
+
+    <table class="w3-table-all">
+      <thead>
+        <tr class="w3-hover-blue">
+          <th></th>
+          <th>Female</th>
+          <th>Male</th>
+        </tr>
+      </thead>
+      <tr class="w3-hover-blue">
+        <th>Math</th>
+        <td id="MathFemale">38.34539330547795%</td>
+        <td id="MathMale">46.13682275080481%</td>
+      </tr>
+      <tr class="w3-hover-blue">
+        <th>Arts</th>
+        <td id="ArtsFemale">46.30529387848358%</td>
+        <td id="ArtsMale"><strong>55.02478913318454%</strong></td>
+      </tr>
+      <tr class="w3-hover-blue">
+        <th>Career</th>
+        <td id="CareerFemale">17.60563660814615%</td>
+        <td id="CareerMale">32.31699591829876%</td>
+      </tr>
+      <tr class="w3-hover-blue">
+        <th>Family</th>
+        <td id="FamilyFemale"><strong>10.072932941197905%</strong></td>
+        <td id="FamilyMale">27.17954028303538%</td>
+      </tr>
+    </table>
+  </div>
+</br>
+  <div class="w3-container w3-pink">
+    <h2><font color="white" weight="">How do we compute these bias scores?</font></h2>
+    <p><font color="white" weight="">
+      Through this process we have discovered that while we can point out similarities,
+      we cannot specifically quantify bias. Checkout the “What is the Deal With These Scores?”
+      page linked at the top in order to better interpret the scores.
+      In terms of bias, we leave that up to you!
+    </font></p>
+  </div>
+</br>
+  <table>
+    <tr>
+      <td>
+      <div class="w3-container">
+        <div class="w3-card-4" style="width:100%">
+          <img src="artsVIsual.png" alt="graph" style="width:500px;">
+          <div class="w3-container w3-center">
+            <p>Visual Representation of Arts Simmilarity for male and females</p>
+          </div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="w3-container">
+        <div class="w3-card-4" style="width:100%">
+          <img src="careerimage.png" alt="graph" style="width:500px;">
+          <div class="w3-container w3-center">
+            <p>Visual Representation of Career Simmilarity for male and females</p>
+          </div>
+        </div>
+      </div>
+    </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="w3-container">
+          <div class="w3-card-4" style="width:100%">
+            <img src="familyvisual.png" alt="graph" style="width:500px;">
+            <div class="w3-container w3-center">
+              <p>Visual Representation of family Simmilarity for male and females</p>
+            </div>
+          </div>
+        </div>
+    </td>
+    <td>
+      <div class="w3-container">
+        <div class="w3-card-4" style="width:100%">
+          <img src="mathvisual.png" alt="graph" style="width:500px;">
+          <div class="w3-container w3-center">
+            <p>Visual Representation of math Simmilarity for male and females</p>
+          </div>
+        </div>
+      </div>
+    </td>
+    </tr>
+  </table>
+
+</div>
+
+</body>
+<script src="static/js/home60.js"></script>
+</html>

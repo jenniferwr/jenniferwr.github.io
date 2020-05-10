@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/home4.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+    <title>Bias Detection Dashboard</title>
+    <div class="w3-container w3-light-blue">
+      <h1 style="font-size:7vw;"><font color="white" weight="bold">BYEas</font></h1>
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+</head>
+<body>
+  <div class="w3-bar w3-blue-grey">
+    <a href="home.html" class="w3-bar-item w3-button">Score Summary</a>
+    <a href="explanation.html" class="w3-bar-item w3-button">What is the deal with these scores?</a>
+    <a href="about-us.html" class="w3-bar-item w3-button">About Our Team</a>
+    <a href="writing-assignments.html" class="w3-bar-item w3-button">Writing Assignments</a>
+    <a href="demo.html" class="w3-bar-item w3-button">Demo</a>
+
+  </div>
+</body>
+<div class="w3-container w3-flat-carrot">
+  <h2>Whats the deal with these scores?</h2>
+</div>
+<div class="w3-container w3-flat-clouds">
+<p>
+Get to know BYEas and where the scores we compute come from!
+</p>
+</div>
+<div class="w3-container w3-pink">
+  <h2>What is BYEas? </h2>
+</div>
+<div class="w3-container w3-flat-clouds">
+  <p>
+    A lightweight web plugin to detect biases in articles through presenting a bias score and highlighting a sentence that has the highest score.
+  </p>
+</div>
+
+<div class="w3-container w3-pink">
+  <h2>Why use BYEas?  </h2>
+</div>
+<div class="w3-container w3-flat-clouds">
+<p>
+  Diversity begins with the material that we are exposed to! Studies have shown that people who are exposed to biased content may be subconsciously internalizing these biases. Whether it is a female not applying to a job in engineering or a male feeling like the woman belongs in the home, these biases are holding us back from making progress with reducing these biases. In the current day, we have the opportunity to harness the power of machine learning to better ourselves.
+</p>
+</div>
+
+<div class="w3-container w3-pink">
+  <h2>How does BYEas work?  </h2>
+</div>
+<div class="w3-container w3-flat-clouds">
+<p>
+  The user downloads the plugin from the chrome store, they browse the web for a relevant article. After the article has been selected, the user has the option to open the BYEas web extension and click “Compute Bias Score.” This will bring the user to a dashboard with explanation of the bias scores, the scores and a visualization of the data gathered.
+</p>
+</div>
+<div class="w3-container w3-pink">
+  <h2>The Bias Detection Algorithm  </h2>
+</div>
+<div class="w3-container w3-flat-clouds">
+<p>
+The bias detection algorithm is built off of the GloVe word embeddings developed by Stanford University. GloVe is an unsupervised learning algorithm that obtains vector representations for each word based on a common crawl of the internet. These word embeddings are especially interesting because the distances between the words relate to their similarities, these word embeddings even allow us to do computations with words. Given the ability to do computations with words from the GloVe word embeddings, we are able to create an algorithm that compares the text in an article to words that have been found to be related to the biases that we are testing. The words that we use to determine bias come from the Implicit Association Test. We use cosine similarity to determine how similar words are and then effect length to determine the effect of the of the similarity.
+</p>
+</div>
+<div class="w3-container w3-pink">
+  <h2>Interpreting the Scores </h2>
+</div>
+<div class="w3-container w3-flat-clouds">
+<p>
+The scores with higher values out of one hundred are a more significant difference. The scores with the lower values out of one hundred have a less significant difference. For example, if the score for math and female if 90% this means that they are very different with respect to the article in questions. If examining the same pair of biases and the score if 5%, this means that they are fairly similar with respect to the article being examined.
+</p>
+</div>
+<div class="w3-container w3-pink">
+  <h2>Looking for more information? Checkout these resources! </h2>
+</div>
+<div class="w3-container w3-flat-clouds">
+<p>
+  The paper on using the Implicit Association Test with word embeddings.
+  https://arxiv.org/abs/1608.07187
+
+  Stanford GloVe Algorithm.
+  https://nlp.stanford.edu/projects/glove/
+</p>
+</div>
